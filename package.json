@@ -1,0 +1,61 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "3.6.5",
+    "firebase": "9.4.1",
+    "trim-canvas": "0.1.2",
+    "vgauge": "1.2.12-rc3",
+    "vue": "^2.6.14",
+    "vue-flatpickr-component": "8.1.7",
+    "vue-router": "3.2.0",
+    "vue-signature-pad": "2.0.2",
+    "vue-toast-notification": "0.6.2",
+    "vuejs-dialog": "1.4.2",
+    "vuetify": "2.5.14",
+    "vuex": "3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.15",
+    "@vue/cli-plugin-router": "^4.5.0",
+    "@vue/cli-plugin-vuex": "^4.5.0",
+    "@vue/cli-service": "^4.5.15",
+    "@vue/eslint-config-standard": "5.1.2",
+    "babel-eslint": "10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.0",
+    "eslint-plugin-vue": "^7.20.0",
+    "sass": "1.32.0",
+    "sass-loader": "10.0.0",
+    "vue-cli-plugin-vuetify": "2.4.1",
+    "vue-template-compiler": "^2.7.16",
+    "vuetify-loader": "1.7.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "space-before-function-paren": "off"
+    }
+  }
+}
