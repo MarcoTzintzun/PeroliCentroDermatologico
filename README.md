@@ -11,7 +11,7 @@ Sigue estos pasos para instalar el proyecto, ejecutarlo y generar el build.
 npm i
 
 2. Ejecuta el servidor de desarrollo:
-npm run serve
+npm run dev
 
 3. Para generar el build de producción:
 npm run build
