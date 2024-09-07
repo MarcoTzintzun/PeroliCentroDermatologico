@@ -1,31 +1,19 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import vuetify from './plugins/vuetify'
-import VueToast from 'vue-toast-notification'
-import VuejsDialog from 'vuejs-dialog'
-import VueSignature from 'vue-signature-pad'
-import globalConfig from './plugins/globalConfig'
-import 'vue-toast-notification/dist/theme-sugar.css'
-import 'vuejs-dialog/dist/vuejs-dialog.min.css'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from "./App.vue";
+import router from "./router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-Vue.use(VueSignature)
-Vue.use(VueToast, {
-  position: 'top-right'
-})
-Vue.use(VuejsDialog, {
-  okText: 'Continuar',
-  cancelText: 'Cancelar'
-})
+// Nucleo Icons
+import "./assets/css/nucleo-icons.css";
+import "./assets/css/nucleo-svg.css";
 
-Vue.prototype.$globalConfig = globalConfig
+import materialKit from "./material-kit";
 
-Vue.config.productionTip = false
+const app = createApp(App);
 
-new Vue({
-  router,
-  store,
-  vuetify,
-  render: h => h(App)
-}).$mount('#app')
+app.use(createPinia());
+app.use(router);
+app.use(materialKit);
+app.mount("#app");
